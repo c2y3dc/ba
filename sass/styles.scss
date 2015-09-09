@@ -19,7 +19,7 @@ body {
 .bannerbg {
     background-color: rgb(241,241,242);
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .banner {
     padding: 0px;
@@ -330,16 +330,16 @@ ul.social li {
     @include background-image(linear-gradient(to bottom, #fcb936 50%, #faa603 50%));
 }
 
-a,
-a:link,
-a:visited {
-    color: white;
-    text-decoration: none;
-}
+// a,
+// a:link,
+// a:visited {
+//     color: white;
+//     text-decoration: none;
+// }
 
-button {
-    color: white;
-}
+// button {
+//     color: white;
+// }
 
 .modal {
     position: fixed;
