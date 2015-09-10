@@ -9,6 +9,8 @@ html(lang="en")
 		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel="stylesheet")
 		link(href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700", rel='stylesheet', type='text/css')
 		link(rel="stylesheet", href="stylesheets/styles.css")
+		style.
+			[data-sr]{visibility: hidden;}
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
 		//- script(src="//app-sjh.marketo.com/js/forms2/js/forms2.min.js")
@@ -57,12 +59,12 @@ html(lang="en")
 				.tab-pane.fade#pi-system
 					h2 Pi System page content
 				.tab-pane.fade#about
-					h2 About page content
+					//- h2 About page content
 					.infographic
 						img(src="assets/infographic_white.png", alt="OSIsoft Delivers the PI System")
 				.tab-pane.fade#contact
 					h2 Contact page content
-		.tallone
+		//- .tallone
 		.footer
 			.container
 				.links(data-sr="wait .4s")
@@ -82,3 +84,6 @@ html(lang="en")
 						li.social_users.trans(data-sr="wait .8s")
 							a(href="http://community.osisoft.com/", target="_blank")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+		script(src="scrollReveal.min.js")
+		script.
+			window.sr = new scrollReveal();
