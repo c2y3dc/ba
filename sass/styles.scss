@@ -1,5 +1,6 @@
 @import "compass/css3";
 body {
+	box-sizing: border-box;
     color: dodgerblue;
     background:#A6A6A6;
     font-family: "Open Sans", sans-serif;
@@ -15,22 +16,55 @@ body {
     margin: 0;
     $border-radius: 8px;
 }
+.banner-heading{
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	// vertical-align: middle;
+}
+.heading-col{
+	// margin: 0.1rem;
+	background-color: mediumspringgreen;
+    // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);	
+    // border-width: 0 1rem 1rem 0rem;
+    // border-style: solid;
+    // border-color: rgb(241,241,241);
+    // &.right-col{
+    // 	border-width: 0 0 1rem 0;
+    // }
+}
+
+.heading{
+	background-color: dodgerblue;
+	margin: 0.5rem;
+}
 
 .bannerbg {
+	// font-size: 4rem;
     background-color: rgb(241,241,242);
     position: relative;
     margin-bottom: 1rem;
 }
-.banner {
-    padding: 0px;
-    margin-bottom: 0px;
-    background: url(../assets/pi-for-bi-banner.png) center top no-repeat;
-    width: 100%;
-    overflow: hidden;
-}
+// .banner {
+//     padding: 0px;
+//     margin-bottom: 0px;
+//     background: url(../assets/pi-for-bi-banner.png) center top no-repeat;
+//     width: 100%;
+//     overflow: hidden;
+// }
 
+// .banner img {
+//     visibility: hidden;
+// }
+.banner {
+    position: relative;
+}
 .banner img {
-    visibility: hidden;
+    display: block;
+    width: 100%;
+    max-width: 940px; /* corresponds to max height of 450px */
+    margin: 0 auto;
 }
 
 .tallone{
