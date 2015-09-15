@@ -21,41 +21,63 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid bannerbg">
-      <div class="row banner-heading">
-        <div class="col-md-6 heading-col"> 
-          <div class="left-heading heading"> 
-            <h2>PI Integrator for Business Analytics</h2>
+    <div class="container-fluid heading-bg">
+      <div class="container tabs">
+        <ul role="tablist" class="nav nav-tabs floatright">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab"><i class="fa fa-home"> </i><span>Home</span></a></li>
+          <li><a href="#pi-system" role="tab" data-toggle="tab">The PI SYSTEM</a></li>
+          <li><a href="#about" role="tab" data-toggle="tab">ABOUT</a></li>
+          <li><a href="#contact" role="tab" data-toggle="tab">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row banner-heading">
+          <div class="col-md-6 heading-col"> 
+            <div class="left-heading heading"> 
+              <h2 class="mtfix">PI Integrator for Business Analytics</h2>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 heading-col"> 
-          <div class="right-heading heading"> 
-            <h2>Access | Standardize | Visualize</h2>
+          <div class="col-md-6 heading-col"> 
+            <div class="right-heading heading"> 
+              <h2 class="mtfix">Access | Standardize | Visualize</h2>
+            </div>
           </div>
         </div>
       </div>
-      <div class="banner"><img alt="banner" src="assets/pi-for-bi-banner.png"></div>
+    </div>
+    <div class="container-fluid bannerbg">
+      <div class="banner"><img alt="banner" src="assets/pi-for-bi-banner-1170x249px.png"></div>
     </div>
     <div class="container">
-      <ul role="tablist" class="nav nav-tabs">
-        <li class="active"><a href="#home" role="tab" data-toggle="tab"><i class="fa fa-home"> </i><span>Home</span></a></li>
-        <li><a href="#pi-system" role="tab" data-toggle="tab">The PI SYSTEM</a></li>
-        <li><a href="#about" role="tab" data-toggle="tab">ABOUT</a></li>
-        <li><a href="#contact" role="tab" data-toggle="tab">CONTACT</a></li>
-      </ul>
       <div class="tab-content">
         <div id="home" class="tab-pane fade active in">
-          <h2>The PI System and PI Integrator for BI bring together time-series data access and tools for standardization, presenting a single version of the truth for your operational data.</h2>
-          <div class="tiles">PLACE HOLDER FOR TILES</div>
+          <h3 class="marginfix">The PI System and PI Integrator for BI bring together time-series data access and tools for standardization, presenting a single version of the truth for your operational data.</h3>
+          <div class="row marginfix">
+            <div class="col-md-4"><img src="assets/PI4BI-webinar-button-v.2.png" class="img-responsive center-block tiles"><br></div>
+            <div class="col-md-4"><a data-toggle="modal" data-target="#myModal0"><img src="assets/PI4BI-O&amp;G-button.png" class="img-responsive center-block tiles"></a><br></div>
+            <div class="col-md-4"><img src="assets/PI4BI-O&amp;G-button-2.png" class="img-responsive center-block tiles"><br></div>
+          </div>
         </div>
         <div id="pi-system" class="tab-pane fade">
           <h2>Pi System page content</h2>
         </div>
         <div id="about" class="tab-pane fade">
-          <div class="infographic"><img src="assets/infographic_white.png" alt="OSIsoft Delivers the PI System"></div>
+          <div class="infographic"><img src="assets/infographic_white.png" alt="OSIsoft Delivers the PI System" class="img-responsive center-block"></div>
         </div>
         <div id="contact" class="tab-pane fade">
-          <h2>Contact page content</h2>
+          <h2>Contact page</h2>
+          <div class="row">
+            <div class="col-md-4"><img title="OSIsoft Corporate Headquarters" alt="OSIsoft Corporate Headquarters" src="http://www.osisoft.com/assets/0/71/102/de31c5c2-8a06-46a0-a4e6-6f9cfac42a62.jpg"></div>
+            <div class="col-md-4">
+              <p><strong>OSIsoft World Headquarters</strong></p>
+              <p>777 Davis Street</p>
+              <p>San Leandro, CA 94577</p><br>
+              <p>Phone: 510.297.5800</p>
+              <p>Fax: 510.357.8136</p>
+              <p>Email:<a href="mailto:sales@osisoft.com">sales@osisoft.com</a></p>
+            </div>
+            <div class="col-md-4"><a href="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=OSIsoft,+Inc.&amp;amp;sll=37.722762,-122.162774&amp;amp;sspn=0.00796,0.016673&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=777+Davis+St,+San+Leandro,+Alameda,+California+94577&amp;amp;ll=37.724446,-122.162669&amp;amp;spn=0.00796,0.016673&amp;amp;z=16&amp;amp;iwloc=A&amp;amp;cid=8509983391277635731">Map</a><br><a href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=4789">Directions</a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -72,8 +94,77 @@
         </div>
       </div>
     </div>
+    <div id="myModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="scrollReveal.min.js"></script>
+    <script>
+      var w = "864";
+      var h = "486";
+      //- $(window).on('resize',function(){location.reload();});
+      var width = $(window).width();
+      if (width < 975) {
+      	if(width > 768){
+      		w = "568";
+      		h = "320";
+      	}else if(width > 400){
+      		w = "550";
+      		h = "310";
+      	}else if (width > 350){
+      		w = "300";
+      		h = "169";
+      	}else{
+      		w = "213";
+      		h = "120";
+      	}
+      }
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+      var vids = {
+      	0 : "L8osE9bBeKg"
+      }
+      var players = [];
+      
+      function onYouTubeIframeAPIReady(){
+      	for(var vid in vids){
+      		var player = new YT.Player('player' + vid, {
+      			width: w,
+      			height: h,
+      			videoId: vids[vid],
+      			playerVars: {rel: 0},
+      			enablejsapi: 1
+      		});
+      		players.push(player);
+      	}
+      }
+      function stopVideo(i){
+      	players[i].stopVideo();
+      }
+      $("#myModal0").on('shown.bs.modal', function() {
+      	if (typeof players[0].playVideo == 'function') {
+      		players[0].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[0].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal0").on('hidden.bs.modal', function(e) {
+      	players[0].stopVideo(0);
+      });
+    </script>
     <script>window.sr = new scrollReveal();</script>
   </body>
 </html>

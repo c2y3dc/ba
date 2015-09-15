@@ -37,41 +37,71 @@ html(lang="en")
 				//- 			a(href='#s3') ABOUT
 				//- 		li
 				//- 			a(href='#s4') CONTACT
+		.container-fluid.heading-bg
+			.container.tabs
+				ul.nav.nav-tabs(role="tablist").floatright
+					li.active
+						a(href="#home", role="tab", data-toggle="tab")
+							i.fa.fa-home 
+							span Home
+					li
+						a(href='#pi-system', role="tab", data-toggle="tab") The PI SYSTEM
+					li
+						a(href='#about', role="tab", data-toggle="tab") ABOUT
+					li
+						a(href='#contact', role="tab", data-toggle="tab") CONTACT
+			.container
+				.row.banner-heading
+					.col-md-6.heading-col 
+						.left-heading.heading 
+							h2.mtfix PI Integrator for Business Analytics
+					.col-md-6.heading-col 
+						.right-heading.heading 
+							h2.mtfix Access | Standardize | Visualize
 		.container-fluid.bannerbg
-			.row.banner-heading
-				.col-md-6.heading-col 
-					.left-heading.heading 
-						h2 PI Integrator for Business Analytics
-				.col-md-6.heading-col 
-					.right-heading.heading 
-						h2 Access | Standardize | Visualize
 			.banner
 				img(alt="banner", src="assets/pi-for-bi-banner-1170x249px.png")
 		.container
-			ul.nav.nav-tabs(role="tablist")
-				li.active
-					a(href="#home", role="tab", data-toggle="tab")
-						i.fa.fa-home 
-						span Home
-				li
-					a(href='#pi-system', role="tab", data-toggle="tab") The PI SYSTEM
-				li
-					a(href='#about', role="tab", data-toggle="tab") ABOUT
-				li
-					a(href='#contact', role="tab", data-toggle="tab") CONTACT
 			.tab-content
 				.tab-pane.fade.active.in#home
-					h2 The PI System and PI Integrator for BI bring together time-series data access and tools for standardization, presenting a single version of the truth for your operational data.
-					.tiles PLACE HOLDER FOR TILES
+					h3.marginfix The PI System and PI Integrator for BI bring together time-series data access and tools for standardization, presenting a single version of the truth for your operational data.
+					.row.marginfix
+						.col-md-4
+							img(src="assets/PI4BI-webinar-button-v.2.png").img-responsive.center-block.tiles
+							br
+						.col-md-4
+							a(data-toggle="modal", data-target="#myModal0")
+								img(src="assets/PI4BI-O&G-button.png").img-responsive.center-block.tiles
+							br
+						.col-md-4
+							img(src="assets/PI4BI-O&G-button-2.png").img-responsive.center-block.tiles
+							br
 				.tab-pane.fade#pi-system
 					h2 Pi System page content
 				.tab-pane.fade#about
 					//- h2 About page content
 					.infographic
-						img(src="assets/infographic_white.png", alt="OSIsoft Delivers the PI System")
+						img(src="assets/infographic_white.png", alt="OSIsoft Delivers the PI System").img-responsive.center-block
 				.tab-pane.fade#contact
-					h2 Contact page content
-		//- .tallone
+					h2 Contact page
+					.row
+						.col-md-4
+							img(title="OSIsoft Corporate Headquarters", alt="OSIsoft Corporate Headquarters", src="http://www.osisoft.com/assets/0/71/102/de31c5c2-8a06-46a0-a4e6-6f9cfac42a62.jpg")
+						.col-md-4
+							p
+								strong OSIsoft World Headquarters
+							p 777 Davis Street
+							p San Leandro, CA 94577
+							br
+							p Phone: 510.297.5800
+							p Fax: 510.357.8136
+							p Email:
+								a(href="mailto:sales@osisoft.com") sales@osisoft.com
+						.col-md-4
+							a(href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=OSIsoft,+Inc.&amp;sll=37.722762,-122.162774&amp;sspn=0.00796,0.016673&amp;ie=UTF8&amp;hq=&amp;hnear=777+Davis+St,+San+Leandro,+Alameda,+California+94577&amp;ll=37.724446,-122.162669&amp;spn=0.00796,0.016673&amp;z=16&amp;iwloc=A&amp;cid=8509983391277635731") Map
+							br
+							a(href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=4789") Directions
+
 		.footer
 			.container
 				.links(data-sr="wait .4s")
@@ -90,7 +120,73 @@ html(lang="en")
 							a(href="http://www.linkedin.com/company/osisoft", target="_blank")
 						li.social_users.trans(data-sr="wait .8s")
 							a(href="http://community.osisoft.com/", target="_blank")
+
+		.modal.fade#myModal0(tabindex="-1", role="dialog", aria-labelledby="myModalLabel")
+			.modal-dialog.modal-lg(role="document")
+				.modal-body
+					.yt
+						#player0
+
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
 		script(src="scrollReveal.min.js")
+		script.
+			var w = "864";
+			var h = "486";
+			//- $(window).on('resize',function(){location.reload();});
+			var width = $(window).width();
+			if (width < 975) {
+				if(width > 768){
+					w = "568";
+					h = "320";
+				}else if(width > 400){
+					w = "550";
+					h = "310";
+				}else if (width > 350){
+					w = "300";
+					h = "169";
+				}else{
+					w = "213";
+					h = "120";
+				}
+			}
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			var vids = {
+				0 : "L8osE9bBeKg"
+			}
+			var players = [];
+
+			function onYouTubeIframeAPIReady(){
+				for(var vid in vids){
+					var player = new YT.Player('player' + vid, {
+						width: w,
+						height: h,
+						videoId: vids[vid],
+						playerVars: {rel: 0},
+						enablejsapi: 1
+					});
+					players.push(player);
+				}
+			}
+			function stopVideo(i){
+				players[i].stopVideo();
+			}
+			$("#myModal0").on('shown.bs.modal', function() {
+				if (typeof players[0].playVideo == 'function') {
+					players[0].playVideo();
+				} else {
+				var fn = function() {
+					players[0].playVideo();
+				};
+					setTimeout(fn, 200);
+				}
+			});
+
+			$("#myModal0").on('hidden.bs.modal', function(e) {
+				players[0].stopVideo(0);
+			});
 		script.
 			window.sr = new scrollReveal();

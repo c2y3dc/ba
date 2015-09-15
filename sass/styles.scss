@@ -1,8 +1,12 @@
 @import "compass/css3";
+
+$osi-blue: #2481c4;
+
 body {
+	padding-top: 90px;
 	box-sizing: border-box;
-    color: dodgerblue;
-    background:#A6A6A6;
+    color: $osi-blue;
+    background:#ffffff;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -16,16 +20,27 @@ body {
     margin: 0;
     $border-radius: 8px;
 }
+
+.tabs {
+	// margin-bottom: 0.5rem;
+}
+
+.mtfix {
+	margin-top: 1rem;
+}
+.marginfix{
+	margin: 3rem;
+}
 .banner-heading{
 	width: 100%;
 	margin: 0 auto;
 	color: white;
 	text-align: center;
-	// vertical-align: middle;
+	font-weight: 100;
 }
 .heading-col{
-	// margin: 0.1rem;
-	background-color: mediumspringgreen;
+	padding: 0;
+	// background-color: #f1f1f2;
     // box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);	
     // border-width: 0 1rem 1rem 0rem;
     // border-style: solid;
@@ -36,8 +51,13 @@ body {
 }
 
 .heading{
-	background-color: dodgerblue;
-	margin: 0.5rem;
+	padding: 1rem;
+	background-color: $osi-blue;
+	margin: 0.3rem;
+}
+.heading-bg {
+	padding: 0;
+	background-color: grey;
 }
 
 .bannerbg {
@@ -63,9 +83,14 @@ body {
 .banner img {
     display: block;
     width: 100%;
-    max-width: 940px; /* corresponds to max height of 450px */
+    max-width: 1170px; /* corresponds to keep aspect ratio */
     margin: 0 auto;
 }
+
+.tiles {
+	background-size: cover;
+}
+
 
 .tallone{
 	height: 2000px
@@ -497,6 +522,10 @@ ul.social li {
         height: 6rem;
         font-size: 2.5rem;
         font-weight: 300;
+    }
+
+    .heading-col{
+    	padding: 0;
     }
 }
 
