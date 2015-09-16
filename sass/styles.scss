@@ -1,6 +1,7 @@
 @import "compass/css3";
 
 $osi-blue: #2481c4;
+$osi-orange: #f9a61b;
 
 body {
 	padding-top: 90px;
@@ -28,6 +29,7 @@ body {
 .mtfix {
 	margin-top: 1rem;
 }
+
 .marginfix{
 	margin: 3rem;
 }
@@ -179,6 +181,9 @@ button {
 
 .floatright {
     float: right;
+}
+.floatleft {
+	float: left;
 }
 
 .black {
@@ -446,6 +451,35 @@ ul.social li {
     text-align: center;
     padding: 10px;
 }
+
+.contact {
+	text-align: left;
+}
+
+.contact-padding-fix {
+	padding-left: 3rem;
+	padding-right: 0;
+	padding-bottom: 3rem;
+}
+
+.contact-bg {
+	margin: 0;
+	padding-top: 2rem;
+	color: white;
+	background-color: $osi-blue;
+	margin-top: 3rem;
+	a {
+		color: white;
+	}
+	a:hover {
+		color: $osi-orange;
+	}
+	p {
+		margin: 0 1rem;
+	}
+}
+
+
 
 
 @media only screen and (max-width: 479px) and (min-width: 0px) {

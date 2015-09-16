@@ -83,11 +83,11 @@ html(lang="en")
 					.infographic
 						img(src="assets/infographic_white.png", alt="OSIsoft Delivers the PI System").img-responsive.center-block
 				.tab-pane.fade#contact
-					h2 Contact page
-					.row
-						.col-md-4
-							img(title="OSIsoft Corporate Headquarters", alt="OSIsoft Corporate Headquarters", src="http://www.osisoft.com/assets/0/71/102/de31c5c2-8a06-46a0-a4e6-6f9cfac42a62.jpg")
-						.col-md-4
+					.row.contact-bg
+						.col-md-4.contact-padding-fix
+							a(href="http://maps.google.com/maps?q=37.723091, -122.162681")
+								img(title="OSIsoft Corporate Headquarters", alt="OSIsoft Corporate Headquarters", src="http://www.osisoft.com/assets/0/71/102/de31c5c2-8a06-46a0-a4e6-6f9cfac42a62.jpg").img-responsive.center-block
+						.col-md-4.contact.contact-padding-fix
 							p
 								strong OSIsoft World Headquarters
 							p 777 Davis Street
@@ -95,13 +95,16 @@ html(lang="en")
 							br
 							p Phone: 510.297.5800
 							p Fax: 510.357.8136
-							p Email:
+							p Email: 
 								a(href="mailto:sales@osisoft.com") sales@osisoft.com
-						.col-md-4
-							a(href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=OSIsoft,+Inc.&amp;sll=37.722762,-122.162774&amp;sspn=0.00796,0.016673&amp;ie=UTF8&amp;hq=&amp;hnear=777+Davis+St,+San+Leandro,+Alameda,+California+94577&amp;ll=37.724446,-122.162669&amp;spn=0.00796,0.016673&amp;z=16&amp;iwloc=A&amp;cid=8509983391277635731") Map
+						.col-md-4.contact.contact-padding-fix
+							p
+								a(href="http://maps.google.com/maps?q=37.723091, -122.162681") Map
 							br
-							a(href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=4789") Directions
-
+							p
+								a(href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=4789") Directions
+					a(href="http://pages.osisoft.com/Business-Analytics.html") 
+						h3 Tell us if you would like to receive further information about the PI Integrator for Business Analtyics
 		.footer
 			.container
 				.links(data-sr="wait .4s")
