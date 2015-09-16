@@ -59,7 +59,20 @@
           </div>
         </div>
         <div id="pi-system" class="tab-pane fade">
-          <h2>Pi System page content</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <p><strong>The PI System</strong> connects sensor-based data, operations and the peooke who rely on data to manage process efficiency, asset health, quality and resource management.The PI System works through server-based technology and allows your data – no matter how old or new it is – to be instantly accessible to your users wherever they are. As a result, <strong>you achieve end to end operational visibility.</strong></p>
+              <h2 class="blue">The PI System comprises:</h2>
+              <div id="clickable1" title="click to expand" onClick="toggle('list1')" class="clickable subcat">
+                <h3>▾ <a>PI Interfaces</a></h3>
+                <p>Data originates from numerous sources.</p>
+              </div>
+              <ul id="list1" title="click to collapse" onClick="toggle('list1)" class="clickable collapsible subcat">
+                <li>OSIsoft has developed over 400 standard interfaces to real time data sources such as OPC, RDBMS, ModBus, SCADA, OLEDB, etc.</li>
+                <li>PI Interfaces temporarily buffer data and then translate diverse communication protocols and collection intervals so data speak a common language.</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div id="about" class="tab-pane fade">
           <div class="infographic"><img src="assets/infographic_white.png" alt="OSIsoft Delivers the PI System" class="img-responsive center-block"></div>
@@ -80,7 +93,7 @@
               <p><a href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=4789">Directions</a></p>
             </div>
           </div><a href="http://pages.osisoft.com/Business-Analytics.html"> 
-            <h3>Tell us if you would like to receive further information about the PI Integrator for Business Analtyics</h3></a>
+            <h4>Tell us if you would like to receive further information about the PI Integrator for Business Analtyics</h4></a>
         </div>
       </div>
     </div>
@@ -168,6 +181,11 @@
       	players[0].stopVideo(0);
       });
     </script>
-    <script>window.sr = new scrollReveal();</script>
+    <script>
+      window.sr = new scrollReveal();
+      function toggle(id){
+      	$("#"+id).toggle();
+      }
+    </script>
   </body>
 </html>

@@ -77,7 +77,19 @@ html(lang="en")
 							img(src="assets/PI4BI-O&G-button-2.png").img-responsive.center-block.tiles
 							br
 				.tab-pane.fade#pi-system
-					h2 Pi System page content
+					.row
+						.col-md-7
+							p
+								#[strong The PI System] connects sensor-based data, operations and the peooke who rely on data to manage process efficiency, asset health, quality and resource management.The PI System works through server-based technology and allows your data – no matter how old or new it is – to be instantly accessible to your users wherever they are. As a result, #[strong you achieve end to end operational visibility.]
+							h2.blue The PI System comprises:
+							.clickable.subcat#clickable1(title="click to expand", onClick="toggle('list1')")
+								h3 ▾ #[a PI Interfaces]
+								p Data originates from numerous sources.
+							ul#list1.clickable.collapsible.subcat(title="click to collapse", onClick="toggle('list1)")
+								li OSIsoft has developed over 400 standard interfaces to real time data sources such as OPC, RDBMS, ModBus, SCADA, OLEDB, etc.
+								li PI Interfaces temporarily buffer data and then translate diverse communication protocols and collection intervals so data speak a common language.
+
+
 				.tab-pane.fade#about
 					//- h2 About page content
 					.infographic
@@ -104,7 +116,7 @@ html(lang="en")
 							p
 								a(href="http://www.osisoft.com/WorkArea/linkit.aspx?LinkIdentifier=id&ItemID=4789") Directions
 					a(href="http://pages.osisoft.com/Business-Analytics.html") 
-						h3 Tell us if you would like to receive further information about the PI Integrator for Business Analtyics
+						h4 Tell us if you would like to receive further information about the PI Integrator for Business Analtyics
 		.footer
 			.container
 				.links(data-sr="wait .4s")
@@ -193,3 +205,6 @@ html(lang="en")
 			});
 		script.
 			window.sr = new scrollReveal();
+			function toggle(id){
+				$("#"+id).toggle();
+			}

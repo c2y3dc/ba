@@ -6,7 +6,7 @@ $osi-orange: #f9a61b;
 body {
 	padding-top: 90px;
 	box-sizing: border-box;
-    color: $osi-blue;
+    // color: $osi-blue;
     background:#ffffff;
     font-family: "Open Sans", sans-serif;
 }
@@ -26,13 +26,6 @@ body {
 	// margin-bottom: 0.5rem;
 }
 
-.mtfix {
-	margin-top: 1rem;
-}
-
-.marginfix{
-	margin: 3rem;
-}
 .banner-heading{
 	width: 100%;
 	margin: 0 auto;
@@ -448,8 +441,8 @@ ul.social li {
     background: #F5F5F5;
     box-shadow: 0 0 4px rgba(0,0,0,.4);
     border-radius: 0;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 3rem;
 }
 
 .contact {
@@ -480,6 +473,25 @@ ul.social li {
 }
 
 
+.mtfix {
+	margin-top: 1rem;
+}
+
+.marginfix{
+	margin: 2rem;
+}
+
+.blue {
+	color: $osi-blue;
+}
+
+.subcat{
+	margin-left: 2rem;
+}
+
+.hidden {
+	display:none;
+}
 
 
 @media only screen and (max-width: 479px) and (min-width: 0px) {
