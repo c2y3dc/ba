@@ -43,13 +43,19 @@ html(lang="en")
 					li.active
 						a(href="#home", role="tab", data-toggle="tab")
 							i.fa.fa-home 
-							span Home
+							span  Home
 					li
-						a(href='#pi-system', role="tab", data-toggle="tab") The PI SYSTEM
+						a(href='#pi-system', role="tab", data-toggle="tab")
+							i.fa.fa-cog.fa-spin
+							span  PI System
 					li
-						a(href='#about', role="tab", data-toggle="tab") ABOUT
+						a(href='#about', role="tab", data-toggle="tab")
+							i.fa.fa-info 
+							span  About
 					li
-						a(href='#contact', role="tab", data-toggle="tab") CONTACT
+						a(href='#contact', role="tab", data-toggle="tab") 
+							i.fa.fa-envelope
+							span  Contact
 			.container
 				.row.banner-heading
 					.col-md-6.heading-col 
@@ -235,6 +241,7 @@ html(lang="en")
 						#player5
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
 		script(src="scrollReveal.min.js")
+		script(src="fix.js")
 		script.
 			var w = "864";
 			var h = "486";
