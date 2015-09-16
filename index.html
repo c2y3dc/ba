@@ -63,14 +63,73 @@
             <div class="col-md-7">
               <p><strong>The PI System</strong> connects sensor-based data, operations and the peooke who rely on data to manage process efficiency, asset health, quality and resource management.The PI System works through server-based technology and allows your data – no matter how old or new it is – to be instantly accessible to your users wherever they are. As a result, <strong>you achieve end to end operational visibility.</strong></p>
               <h2 class="blue">The PI System comprises:</h2>
-              <div id="clickable1" title="click to expand" onClick="toggle('list1')" class="clickable subcat">
+              <div id="clickable1" title="click to expand" onClick="togglevis('list1');" class="clickable subcat">
                 <h3>▾ <a>PI Interfaces</a></h3>
                 <p>Data originates from numerous sources.</p>
               </div>
-              <ul id="list1" title="click to collapse" onClick="toggle('list1)" class="clickable collapsible subcat">
+              <ul id="list1" title="click to collapse" onClick="togglevis('list1');" class="clickable collapsible subcat display-none">
                 <li>OSIsoft has developed over 400 standard interfaces to real time data sources such as OPC, RDBMS, ModBus, SCADA, OLEDB, etc.</li>
                 <li>PI Interfaces temporarily buffer data and then translate diverse communication protocols and collection intervals so data speak a common language.</li>
               </ul>
+              <div id="clickable2" title="click to expand" onClick="togglevis('list2');" class="clickable subcat">
+                <h3>▾ <a>PI Server</a></h3>
+                <p>Machines are constantly creating more data.</p>
+              </div>
+              <ul id="list2" title="click to collapse" onClick="togglevis('list2');" class="clickable collapsible subcat display-none">
+                <li>The PI Server's <strong>scalability</strong> means that it can:
+                  <ul class="squarelist">
+                    <li>Collect large volumes of sub-second data</li>
+                    <li>Store up to 20 Million streams fo high quality data-toggle</li>
+                  </ul>
+                </li>
+                <li>Provides operational <strong>context</strong> to raw data streams. An asset-based metadata layer:</li>
+                <li>Organizes data by asset topology so that <strong>data retrieval is more intuitive</strong> to users across the enterprise. </li>
+                <li>The PI Server also includes, auto-event capture, streaming, asset-based analytics, notifications and <strong>performance monitoring tools</strong></li>
+              </ul>
+              <div id="clickable3" title="click to expand" onClick="togglevis('list3');" class="clickable subcat">
+                <h3>▾ <a>PI Tools</a></h3>
+                <p>People need tools to collaborate around data and information.</p>
+              </div>
+              <ul id="list3" title="click to collapse" onClick="togglevis('list3');" class="clickable collapsible subcat display-none">
+                <li>PI Client Tools address <strong>visualization and analysis</strong> needs of stakeholders across the organization and include:
+                  <ul class="squarelist">
+                    <li>Graphical displays</li>
+                    <li>Automated analysis and reporting spreadsheets</li>
+                    <li>Web-based, ad hoc trending that can be visualized on multiple devices</li>
+                  </ul>
+                </li>
+              </ul><br>
+              <p><strong>The PI System is embedded in critical infrastructure and deployed at over 17,000 sites in 110 countries worldwide.</strong> By utilizing a PI System infrastructure, our customers within a broad range of industries including <strong>Water & Wastewater, Power & Utilities, Oil & Gas, Pulp and Paper, Chemical and Petro-chemical and Pharma</strong> have cut costs by reducing IT complexity, optimizing people and driving operational excellence.</p>
+              <h2 class="blue">Learn more about the PI System</h2>
+              <h3>PI Architecture	</h3>
+              <div class="row">
+                <div class="col-md-5"><a data-toggle="modal" data-target="#myModal1"><img src="assets/thumb_pisystem.png" class="img-responsive center-block tiles"></a></div>
+                <div class="col-md-7"><a data-toggle="modal" data-target="#myModal1">OSIsoft: PI Basics - Map of the PI System</a>
+                  <p>This whiteboard video explains the infrustracture of the PI System, consisting of three major componenets, the PI Server, the PI Interface, PI Clients</p>
+                </div>
+              </div>
+              <h3>PI Tools	</h3>
+              <div class="row">
+                <div class="col-md-5"><a data-toggle="modal" data-target="#myModal2"><img src="assets/thumb_picoresight.png" class="img-responsive center-block tiles"></a></div>
+                <div class="col-md-7"><a data-toggle="modal" data-target="#myModal2">OSIsoft: What is PI Coresight?</a>
+                  <p>Watch this brief video to learn about PI Coresight, a web-based product for ad-hoc analysis, quick investigation, collaboration and rapid deployment.</p>
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="col-md-5"><a data-toggle="modal" data-target="#myModal3"><img src="assets/thumb_processbook.png" class="img-responsive center-block tiles"></a></div>
+                <div class="col-md-7"><a data-toggle="modal" data-target="#myModal3">OSIsoft: What is PI ProcessBook?</a>
+                  <p>This short video explains PI Processbook, an easy-to-use display interface to the PI System that displays current and historical data residing in the PI System and other sources.</p>
+                </div>
+              </div><br>
+              <div class="row">
+                <div class="col-md-5"><a data-toggle="modal" data-target="#myModal4"><img src="assets/thumb_pidatalink.png" class="img-responsive center-block tiles"></a></div>
+                <div class="col-md-7"><a data-toggle="modal" data-target="#myModal4">OSIsoft: What is PI DataLink?</a>
+                  <p>Watch this brief overview of PI Datalink, a Microsoft Excel add-in that enables information retrieval from the PI System directly into a spreadsheet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <h4 class="blue">Storyboard Map of the PI System's Connections</h4><br><a data-toggle="modal" data-target="#myModal5"><img src="assets/storyboard.png" class="img-responsive tiles"></a><br><br><br><a href="downloads/WhyPISystem_Infographic.pdf"><img src="assets/whypi.png" class="img-responsive tiles"></a>
             </div>
           </div>
         </div>
@@ -119,6 +178,51 @@
         </div>
       </div>
     </div>
+    <div id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+      <div role="document" class="modal-dialog modal-lg">
+        <div class="modal-body">
+          <div class="yt">
+            <div id="player5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="scrollReveal.min.js"></script>
     <script>
@@ -147,7 +251,12 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       
       var vids = {
-      	0 : "L8osE9bBeKg"
+      	0 : "L8osE9bBeKg",
+      	1 : "zj2EoTkpz1k",
+      	2 : "iS_eQe7AfAY",
+      	3 : "uRA5gLfwjMo",
+      	4 : "7-WEzMqGjTo",
+      	5 : "0aOX_W8zZMA"
       }
       var players = [];
       
@@ -180,11 +289,92 @@
       $("#myModal0").on('hidden.bs.modal', function(e) {
       	players[0].stopVideo(0);
       });
+      
+      $("#myModal1").on('shown.bs.modal', function() {
+      	if (typeof players[1].playVideo == 'function') {
+      		players[1].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[1].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal1").on('hidden.bs.modal', function(e) {
+      	players[1].stopVideo(1);
+      });
+      
+      $("#myModal2").on('shown.bs.modal', function() {
+      	if (typeof players[2].playVideo == 'function') {
+      		players[2].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[2].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal2").on('hidden.bs.modal', function(e) {
+      	players[2].stopVideo(2);
+      });
+      $("#myModal3").on('shown.bs.modal', function() {
+      	if (typeof players[3].playVideo == 'function') {
+      		players[3].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[3].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal3").on('hidden.bs.modal', function(e) {
+      	players[3].stopVideo(3);
+      });
+      $("#myModal4").on('shown.bs.modal', function() {
+      	if (typeof players[4].playVideo == 'function') {
+      		players[4].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[4].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal4").on('hidden.bs.modal', function(e) {
+      	players[4].stopVideo(4);
+      });
+      $("#myModal5").on('shown.bs.modal', function() {
+      	if (typeof players[5].playVideo == 'function') {
+      		players[5].playVideo();
+      	} else {
+      	var fn = function() {
+      		players[5].playVideo();
+      	};
+      		setTimeout(fn, 200);
+      	}
+      });
+      
+      $("#myModal5").on('hidden.bs.modal', function(e) {
+      	players[5].stopVideo(5);
+      });
     </script>
     <script>
       window.sr = new scrollReveal();
       function toggle(id){
-      	$("#"+id).toggle();
+      	$("#" + id).toggle();
+      }
+      function togglevis(target){
+      	var ele = document.getElementById(target);
+      	if(ele.style.display == "block"){
+      		ele.style.display = "none";
+      	}else{ 
+      		ele.style.display = "block";
+      	}				
+      	return false;
       }
     </script>
   </body>

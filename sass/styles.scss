@@ -84,6 +84,7 @@ body {
 
 .tiles {
 	background-size: cover;
+	margin: 0 auto;
 }
 
 
@@ -489,8 +490,8 @@ ul.social li {
 	margin-left: 2rem;
 }
 
-.hidden {
-	display:none;
+.display-none {
+	display: none;
 }
 
 
